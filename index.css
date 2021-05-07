@@ -1,1 +1,10 @@
+.nav{
+    position: relative;
+    background-color: #00000;
+    height: 68px;
+    padding-top: 20px;
+    line-height: 50px;
+    overflow: hidden;
+    z-index: 2;
+}
 
