@@ -1,0 +1,55 @@
+#Upgrade pip version
+python -m pip install --upgrade pip
+
+#Check version of pip
+python -m pip -V
+
+#install virtualenv 
+python -m pip install virtualenv
+
+#Check version of virtualenv
+my
+
+
+#if ps1 cannot be loaded because running scripts is disabled on this system then execute following command
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+
+# Setting up virtual environment
+E :/>mkdir My Project
+E :/>cd My Project
+
+#Create virtual environment
+E :/My Project>virtualenv textUtils
+
+#activate virtual environment
+E :/My Project>cd textUtils
+E :/My Project/textUtils>.\scripts\activate
+(textUtils)E :/My Project/textUtils>
+
+# install django in virtual environment
+(textUtils)E :/My Project/textUtils>cd Scripts
+(textUtils)E :/My Project/textUtils/Script>pip install django
+
+#Check django version
+
+
+
+(textUtils)E :/My Project/textUtils/Script>django-admin --version
+or
+(textUtils)E :/My Project/textUtils/Script>pyhton -m django --version
+
+#Create django project
+(textUtils)E :/My Project/textUtils/Script>django-admin startproject textUtils
+
+# Run django development server
+(textUtils)E :/My Project/textUtils/Script>cd textUtils
+(textUtils)E :/My Project/textUtils/Script/textUtils> python manage.py runserver
+
+# to Stop django development server 
+CTRL + C
+
+# to deactivate virtual environment
+(textUtils)E :/My Project/textUtils/Script/textUtils>deactivate
+
+
+
