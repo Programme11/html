@@ -1,34 +1,111 @@
 <html>
   <head>
    <link rel="stylesheet" href="index.css">
+   <style>
+   body{
+       margin : 0px;
+	   padding : 0px;
+	   font-family: verdana;
+   }
+   #logo{
+    position: relative;
+    background-color: #fffff;
+    height: 70px;
+    padding-top: 0px;
+    line-height: 50px;
+    overflow: hidden;
+    z-index: 2;
+
+}
+#rj-img{
+top : 50px;
+
+}
+  .content{
+    position : relative;
+	
+  }
+
+  
+  #nav{
+
+	  border : 1px solid blue;
+	  box-shadow: 0px 1px 1px 1px;
+	  background-color : orange;
+	  
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+#cd-pad::before{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+#cd-pad1::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+  .rj-code .cd-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+.cd-bar .rj-button {
+    white-space: normal;
+}
+.rj-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.rj-button:hover {
+    color: #000!important;
+    background-color: #fff!important;
+}
+
+</style>
    <title>
-    DD
+    Rj
    </title>
   </head>
   <body bgcolor >
-    <!--------------------------------------- logo bar --->
+    <!-- logo bar --->
    <div id = "logo">
-     <h1 class = "content">  Daily Dairy </h1>
+     <h1 class = content>  RJ college </h1>
    </div>
-     <!------------------------------------logo bar end --->
-	 <!----------------------------- navigation bar --->
-   <div id = "nav">
-	  <a class="rj-code rj-button" href="/html/default.asp">Home</a>
-	  <a class="rj-code rj-button" href="/html/default.asp">products</a>
-	  <a class="rj-code rj-button" href="/html/default.asp">services</a>
-	  <a class="rj-code rj-button" href="/html/default.asp">about us</a>
-   </div>
-	 <!------------------------- navigation bar end --->
-	 <!------------------------------------ sidebar --->
-   <div>
-   </div>
-	 <!-------------------------------- sidebar end --->
-
-	 <!------------------------------------ content --->
-   <div id = "rj-pad1 rj-pad">
-	   <p class = "g">hello world</p>
-   </div>
-	 <!-------------------------------- content end --->	  
+     <!-- logo bar end --->
+	 <!-- navigation bar --->
+	
+	 <div id = "nav" >
+	 <a class="rj-code rj-button" href="/html/default.asp">Computer-sc</a>
+	  <a class="rj-code rj-button" href="/html/default.asp">Bio-techno</a>
+	  <a class="rj-code rj-button" href="/html/default.asp">information-tec</a>
+	  <a class="rj-code rj-button" href="/html/default.asp">B.S.C.</a>
 	  
+	 </div>
+	
+	 <!-- navigation bar end --->
+	 <!-- sidebar --->
+	 <!-- sidebar end --->
+     <div id = "cd-pad cd-pad1"> 
+	 <div id = "cd-pad cd-pad1" >
+	 <p class = "g">hello world </p>
+	 </div>
+	  </div>
+   </div>
   </body>
  </html>
