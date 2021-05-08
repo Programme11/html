@@ -38,6 +38,7 @@ body {
 #rj-img{
 	background-image: url("DD1.jpg");
 	background-color :green;
+	color : "gold"
         }
   .content {
     position : relative;
