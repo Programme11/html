@@ -1,13 +1,13 @@
 *, *:before, *:after {
     box-sizing: inherit;
 }
-.rj-pad::before{
+#rj-pad::before{
     content: "";
     display: table;
     clear: both;
 
 }
-.rj-pad1::after{
+#rj-pad1::after{
     content: "";
     display: table;
     clear: both;
@@ -37,7 +37,6 @@ body {
   }
 #rj-img{
 	background-image: url("DD1.jpg");
-	background-color :green;
 	color : "gold";
         }
   .content {
