@@ -17,6 +17,7 @@ body{
 	background-image: url("DD1.jpg");
         height : 100%;
 	width : 100%;
+	background-size: cover;
         }
   .content{
     position : relative;
