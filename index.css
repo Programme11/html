@@ -1,3 +1,17 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.rj-pad::before{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+.rj-pad1::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 body {
        margin : 0px;
 	   padding : 0px;
