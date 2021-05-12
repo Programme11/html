@@ -7,10 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-     *{
+        *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+}
+body{
+    background:linear-gradient(90deg,rgb(107, 107, 238),rgb(255, 3, 255)) ;
+
 }
 #services{
      background-color: rgb(127, 182, 255);
@@ -18,14 +22,15 @@
 
 }
 img{
-    background-image: 40% 40%;
+    background-image: 50% 50%;
     background-repeat: no-repeat;
     background-position:absolute;
-   
+    width: 1400px;
+    height: 450px;
 }
 .text{
-    color:rgb(6, 75, 75);
-    background-color:white;
+    color:rgb(0, 0, 0);
+    background-color: rgb(127, 182, 255);
     text-indent: 3rem;
     padding-left: 10px;
     font-size:x-large;
@@ -34,14 +39,17 @@ img{
 }
 .content{
     display: flex;
-    justify-content: space-around;  
+    justify-content:space-between; 
+    color: rgb(9, 185, 255);
+    background-color: rgb(132, 158, 236);
 }
 button{
   background: none;
   padding: 10px 20px;
   font-size: 20px;
   margin-left: 60rem;
-  margin-top: -9rem; 
+  margin-top: -7rem; 
+  margin-left: 50rem;
   position: absolute;
   background-color:#3478db;
   cursor: pointer;
@@ -51,37 +59,56 @@ button:hover{
     color: #3478db;
     transition: .5s;
 }
-span{
-    float: center;
-}
-.div1{
-    he
-}
-#side-by-side{
+.flex{
     display: flex;
-    margin-top:1rem;
-    justify-content:space-around;
+    justify-content: space-between;
+    background-color:  rgb(127, 182, 255);
 }
-.div1{
-    border: 2px solid greenyellow;
-    width: 25rem;
-    height: 10rem;
-    text-align: center;
+.box-area{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
 }
-.div2{
-    border: 2px solid greenyellow;
-    width: 25rem;
-    height: 10rem;
+.single-box{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
     text-align: center;
+    background-color: rgb(24, 97, 206);
+    margin: 20px;
+    padding: 20px;
+    transition: 0.3s;
+    
+}
+
+.header-text{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+}
+.img-text p{
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 30;
+      color: white;
+}
+
+.img-text{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 20px;
+}
+.single-box:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 47, 109);
+    transform: translateY(-1.7rem);
 
 }
-.div3{
-    border: 2px solid greenyellow;
-    width: 25rem;
-    height: 10rem;
-    text-align: center;
-}
-
     </style>
 </head>
 <body>
@@ -89,22 +116,52 @@ span{
         <h1 id="services">SERVICES</h1>
     </div>
     <div class='content'>
-        <img src="delivery.jpg" alt="">
+        <img src="delivery1.jpg" alt="">
         <p class="text"> 
 we currently deliver to Mumbai,Ratnagiri and Satara.Free home delivery for the puchase above Rs 500/- only.
-<br>
+<br><br>
 Delivery information:-Delivery timings and Working days.
 we deliver between 1:00PM and 6:00PM.if there is any delay we inform you.
+<br><br>
+you can place your order using mobile phone we have our andriod app.
         </p>
     </div>
     
     <button classs="btn">
         please order 
     </button> 
- <span id=side-by-side>
- <div class=div1>hello</div>
- <div class="div2">hello</div>
- <div class="div3">hello</div>
-</span>
+    <div class=flex>
+<!--      first box      -->
+<div class="box-area">
+    <div class="single-box">
+        <div class="image-area"></div>
+        <div class="image-text">
+            <span class="header-text"><strong>Same Day</strong></span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, alias molestias nihil, voluptatem reprehenderit vel quo incidunt soluta laboriosam unde, ea aliquam illo facilis corporis quisquam? Delectus architecto a nobis excepturi, vero eligendi voluptatibus!</p>
+        </div>
+    </div>
+</div>
+<!--    second box     -->
+<div class="box-area">
+    <div class="single-box">
+        <div class="image-area"></div>
+        <div class="image-text">
+            <span class="header-text"><strong>On Time</strong></span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, alias molestias nihil, voluptatem reprehenderit vel quo incidunt soluta laboriosam unde, ea aliquam illo facilis corporis quisquam? Delectus architecto a nobis excepturi, vero eligendi voluptatibus!
+            </p>
+        </div>
+    </div>
+</div>
+<!-- third box  -->
+<div class="box-area">
+    <div class="single-box">
+        <div class="image-area"></div>
+        <div class="image-text">
+            <span class="header-text"><strong>Pure Milk</strong></span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, alias molestias nihil, voluptatem reprehenderit vel quo incidunt soluta laboriosam unde, ea aliquam illo facilis corporis quisquam? Delectus architecto a nobis excepturi, vero eligendi voluptatibus!</p>
+        </div>
+    </div>
+</div>
+</div>
 </body>
 </html>
